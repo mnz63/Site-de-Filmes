@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #1C1F2B; font-family: 'Inter', sans-serif;
+    height: 200vh;
+}
+
+.carousel-container{
+    width: calc(100% - 305px);
+    height: 824px;
+    position: absolute; 
+    top: 0px; 
+    right: 0px;
+}
+
+.capa {
+    position: relative;
+    width: 100%;
+}
+
+.header-container{
+    position: relative;
+    display: flex;
+    width: 1509px;
+    height: 36px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 46px;
+    animation: fade2 0.6s;
+}
+
+.menu-list-options{
+    position: absolute;
+    display: flex;
+    font-size: 25px;
+    margin-right: 116px;
+    list-style: none;
+    transition: 0.2s;
+}
+
+.menu-list-options li {
+    margin-right: 116px;
+    cursor: pointer;
+}
+
+.menu-list-options a {
+    text-decoration: none;
+    color: #909397;
+}
+
+
+.menu-icons{
+    position: absolute;
+    right: 0%;
+    width: 96px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.menu-icons img {
+    margin-left: 33px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.text-initial {
+    position: relative;
+    color: white;
+    font-family: 'Inter';
+    width: 619px;
+    height: 258px;
+    margin:118px 0px 0px 70px;
+}
+
+.informacao{
+    position: relative;
+    font-weight: bold;
+    margin-top: 27px;
+    animation: fade 1s 0.3s forwards;
+    left: -800px;
+    font-size: 64px;
+}
+
+.bemvindo {
+    position: relative;
+    font-weight: normal;
+    animation: fade 1s;
+    animation-fill-mode: forwards;
+    left: -800px;
+    font-size: 64px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+    height: 85px;
+    position: relative;
+    margin:115px 0px 0px 70px;
+    animation: fade 1s 0.5s forwards;;
+    left: -800px;
+}
+
+.button{
+    font: bold 30px 'Inter';
+    width: 288px;
+    height: 85px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover{
+    opacity: 80%;
+}
+
+.register {
+    border: 1px solid #EF4B4C;
+    color: #EF4B4C;
+}
+
+
+.login{
+    background-color: #EF4B4C;
+    color: #ffffff;
+    border: none;
+}
+
+.cards-container{
+    display: flex;
+    position: relative;
+    width: calc(100vw - 133px);
+    height: 468px;
+    margin: 79px 0 0 116px;
+    padding: 18px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    transition: all 0.3s ease;
+}
+
+.cards-container::-webkit-scrollbar{
+    height: 10px;
+    color: #5B5B5B;
+    position: absolute;
+    top: 0%;
+}
+
+.poster{
+    width: 226px;
+    height: 335px;
+}
+
+.card-content{
+    width: 232px;
+    height: 435px;
+    margin-right: 5px;
+}
+
+.cards-container::before{
+    content: "";
+}
+
+.card-background {
+    padding: 3px;
+    width: 232px;
+    height: 0%;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.card-background:hover {
+    opacity: 100%;
+    height: 100%;
+    animation: fadeInfo 1s;
+}
+
+.card-background:hover .content{
+    opacity: 100%;
+}
+
+.content{
+    opacity: 0%;
+    transition: all 0.3s ease;
+    width: 219px;
+    height: 79px;
+    margin: 8px 0 0 4px;
+}
+
+.content h2{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.content p {
+    color: #5B5B5B;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #EF4B4C #ffffff;
+}
+
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+*::-webkit-scrollbar-thumb {
+    background-color: #5B5B5B;
+    border-radius: 10px;
+}
+
+.grid-films{
+    display: grid;
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    grid-template-areas: "a1 a1 a2 a3"
+                         "a1 a1 a4 a5";
+    grid-gap: 6px;
+}
+
+.a1{
+    background: url("./assets/img/capa.jpg") left/cover;
+    grid-area: a1;
+}
+.a2{
+    background: url("./assets/img/batman.jpg") center/cover;
+    grid-area: a2;
+}
+.a3{
+    background: url("./assets/img/minions.jpg") center/cover;
+    grid-area: a3;
+}
+.a4{
+    background: url("./assets/img/spiderman.jpg") right/cover;
+    grid-area: a4;
+}
+.a5{
+    background: url("./assets/img/thor.jpg") center/cover;
+    grid-area: a5;
+}
+
+.grid-films-item:hover{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform:scale(0.96, 0.96);
+}
+
+.grid-films-item:active{
+    transform:scale(0.90, 0.90);
+}
+
+@keyframes fade {
+    0%{
+        left: -1000px;
+        opacity: 0%;
+    }
+    100%{
+        left: 0px;
+        opacity: 100%;
+    }
+}
+
+@keyframes fade2 {
+    0%{
+        top:-500px;
+    }
+    100%{
+        top:0px;
+    }
+}
