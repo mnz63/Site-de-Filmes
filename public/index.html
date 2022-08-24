@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veja tudo sobre seu filme favorito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide position-absolute end-0 top-0" data-bs-ride="carousel" style="width: calc(100% - 305px); height: 824px;">
+        <div class="carousel-inner">
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/img/capa.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/img/batman.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/img/minions.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/img/spiderman.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="assets/img/thor.jpg" class="d-block w-100">
+          </div>
+        </div>
+      </div>
+
+    <header class="header-container">
+        <div class="menu-list">
+            <ul class="menu-list-options">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="filmes">Filmes</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="menu-icons">
+            <img src="assets/icons/search.svg" alt="search">
+            <img src="assets/icons/menu.svg" alt="menu">
+        </div>
+        
+    </header>
+
+    <div class="text-initial">
+        <h2 class="bemvindo">
+            Bem Vindo
+        </h2>
+        <h2 class="informacao">
+            Veja tudo sobre seu <br>
+            filme favorito
+        </h2>
+    </div>
+
+    <div class="buttons-container">
+        <button class="button register">Registrar</button>
+        <button class="button login">Entrar</button>
+    </div>
+
+    <section class="cards-container" id = "cardsContainer">
+        
+    </section>
+
+    <section class="cards-container" id = "secondCardsContainer">
+        
+    </section>
+
+    <section class="grid-films">
+      <div class="a1 grid-films-item">
+      </div>
+      <div class="a2 grid-films-item"></div>
+      <div class="a3 grid-films-item"></div>
+      <div class="a4 grid-films-item"></div>
+      <div class="a5 grid-films-item"></div>
+    </section>
+
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
