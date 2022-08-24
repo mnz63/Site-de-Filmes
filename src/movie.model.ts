@@ -4,7 +4,7 @@ type movie = {
     subTitle: string;
     category: string;
     release_date: string;
-    rate: number;
+    rate: string;
     overview: string;
     background: string;
     runtime: string;
