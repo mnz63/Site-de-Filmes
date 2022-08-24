@@ -11,7 +11,7 @@ body{
 }
 
 .carousel-container{
-    width: calc(100% - 305px);
+    width: 80%;
     height: 824px;
     position: absolute; 
     top: 0px; 
@@ -268,6 +268,63 @@ body{
 .grid-films-item:active{
     transform:scale(0.90, 0.90);
 }
+
+@media (max-width: 800px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .header-container{
+        display: none;
+    }
+
+    .text-initial{
+        width: 90%;
+        margin: 0%;
+    }
+
+    .text-initial{
+        margin-top: 100px;
+        margin-left: 30px;
+        height: 150px;
+    }
+
+    .bemvindo, .informacao{
+        font-size: 24px;
+    }
+
+    .carousel{
+        width: 100vw;
+    }
+
+    .buttons-container{
+        margin: 0%;
+        width: 90%;
+    }
+
+    .button{
+        font-size: 15px;
+        width: 150px;
+        height: 45px;
+    }
+
+    .cards-container{
+        width: 100vw;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+   .grid-films{
+    display: none;
+   }
+}
+
 
 @keyframes fade {
     0%{
