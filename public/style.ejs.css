@@ -139,6 +139,11 @@ body{
     line-height: 24px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    overflow: scroll;
+}
+
+.overview::-webkit-scrollbar {
+    display: none;
 }
 
 .director{
