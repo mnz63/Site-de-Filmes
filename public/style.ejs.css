@@ -117,7 +117,8 @@ body{
 
 .overview-container{
     width: 98%;
-    height: 45vh;
+    min-height: 40vh;
+    max-height: 45vh;
     background: rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     padding: 32px;
