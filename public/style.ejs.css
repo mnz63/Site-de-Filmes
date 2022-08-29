@@ -8,6 +8,7 @@
 
 body{
     background-color: #1C1F2B; font-family: 'Inter', sans-serif;
+    overflow: hidden;
 }
 
 * {
@@ -34,7 +35,7 @@ body{
 
 .poster-background {
     height: 100%;
-    width: 69.5%;
+    width: 70%;
 }
 
 .about{
@@ -70,14 +71,16 @@ body{
 }
 
 .about{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30%;
 }
 
 .about-container{
-    width: calc(100% - 70px);
-    height: calc(100% - 124px);
+    width: calc(100% - 30px);
+    height: calc(100% - 50px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,8 +116,8 @@ body{
 }
 
 .overview-container{
-    width: 516px;
-    height: 467px;
+    width: 98%;
+    height: 45vh;
     background: rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     padding: 32px;
@@ -122,18 +125,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 65px;
+    margin-top: 5vh;
 }
 
 .overview-container h2{
     font-weight: 900;
-    font-size: 32px;
+    font-size: 3.2vh;
     color: #EF4B4C;
     margin-top: 10px;
 }
 
 .overview{
-    margin-top: 62px;
+    margin-top: 5vh;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
